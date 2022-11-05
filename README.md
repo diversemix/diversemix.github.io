@@ -1,4 +1,21 @@
-# Minimal Mistakes remote theme starter
+# diversemix.github.io
+
+This site is hosted on [blog.diversemix.com](http://blog.diversemix.com)
+
+## Running locally
+
+A word of warning, I thought I'd install `rbenv` to be able to control different versions of ruby on my system. However, this will take you down a complete rabbit hole of trying to make ruby compile - this was some incompatibility with openssl. YMMV 
+
+The following assumes the use of a Debian based linux O/S, such at Ubuntu:
+
+1. Setup ruby: `sudo apt install ruby-full` 
+2. Install ruby bundler `sudo apt install ruby-bundler`
+3. Install the project's dependencies from in the root folder: `bundler install`
+4. You might need to install `jekyll` with: `gem install jekyll`
+5. Build the site: `bundle jekyll build`
+6. Serve the site locally: `bundle exec jekyll serve`
+   
+## Minimal Mistakes remote theme starter
 
 Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
 
@@ -18,7 +35,7 @@ Replace sample content with your own and [configure as necessary](https://mmista
 
 ---
 
-## Troubleshooting
+### Troubleshooting
 
 If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
 
