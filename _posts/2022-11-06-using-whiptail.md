@@ -1,6 +1,6 @@
 ---
 title: "New Post"
-last_modified_at: 2022-11-05T17:28:03+00:00
+last_modified_at: 2022-11-06T10:50:30+00:00
 categories:
   - blank
 tags:
@@ -10,4 +10,4 @@ tags:
   - personal
 ---
 
-This is my first post with my new script
+This is a post about using whiptail
