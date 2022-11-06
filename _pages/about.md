@@ -13,7 +13,7 @@ There are three ways to use this site:
   <tr>
     <th>Technical</th>
     <td>
-        Most of this site is dedicated to software development.
+        Most of this site is dedicated to software development and its process to deployment on various infrastructure.
         How does this look?
         <p>
         <a href="/categories/#technical">Browse technical posts...</a>
@@ -23,7 +23,7 @@ There are three ways to use this site:
   <tr>
     <th>People</th>
     <td>
-        This category contains posts on topics such as working in teams, communication and 
+        This category contains posts on topics such as working in teams and communication including documentation. 
         <p>
         <a href="/categories/#people">Browse posts about people...</a>
         </p>
@@ -32,8 +32,8 @@ There are three ways to use this site:
   <tr>
     <th>Interest</th>
     <td>
-        Opinions
-        This category contains posts on topics such as working in teams, communication and 
+        Interest posts are passing  including, woodworking, pottery,  
+        These posts will be opinionated. 
         <p>
         <a href="/categories/#interests">Browse posts about other interests...</a>
         </p>
@@ -42,11 +42,19 @@ There are three ways to use this site:
   <tr>
     <th>Learning</th>
     <td>
-        This category contains posts on topics such as working in teams, communication and 
+        Each post in the learning category is a personal record of resources and output from exercises.
+        Hopefully you will find these useful if embarking on a similar topic to learn.  
         <p>
-        <a href="/categories/#technical">Browse </a>
+        <a href="/categories/#technical">Browse areas of learning...</a>
         </p>
     </td>
   </tr>
 </table>
 
+- Please see [this post: How I organize myself](/technical/How-I-organize-myself) on how this site is used.
+
+- Please see [this git repo](https://github.com/diversemix/diversemix.github.io) for information on how this site is built.
+ 
+- For any other information about me and the my work in the Open Source community, please visit my [github page](https://github.com/diversemix).
+
+- [My publications](https://orcid.org/0000-0003-3830-8230) in the field of organic semiconductors. 

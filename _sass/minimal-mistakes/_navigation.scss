@@ -165,6 +165,25 @@
 }
 
 /*
+    Squash the pagination
+    ========================================================================== */
+    
+
+/* next/previous buttons */
+.pagination--pager {
+  color: $text-color;
+  background-color: $border-color;
+  border-color: transparent;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 0.8em;
+  &:visited {
+    color: $text-color;
+  }
+}
+
+
+/*
      Priority plus navigation
      ========================================================================== */
 
