@@ -14,7 +14,13 @@ The following assumes the use of a Debian based linux O/S, such at Ubuntu:
 4. You might need to install `jekyll` with: `gem install jekyll`
 5. Build the site: `bundle jekyll build`
 6. Serve the site locally: `bundle exec jekyll serve`
-   
+
+## Stylesheet Link
+
+- [Stylesheets in theme](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/)
+- Modify style in `_dirt.scss`
+- To get column header changes have been made to  `_tables.scss`
+  
 ## Minimal Mistakes remote theme starter
 
 Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
