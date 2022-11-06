@@ -26,3 +26,15 @@ There are many more dialog types that can be used:
  - checklist
  - radiolist
  - gauge 
+
+The last one here is `gauge` which can be tricky to get working, thankfully
+there is a good [StackOverflow post here](https://askubuntu.com/a/1137631), 
+which suggests this code:
+
+```bash
+for i in {1..100}; do
+   sleep 0.1
+   export TERM=linux
+   echo $i | whiptail --gauge "Doing something" 10 50 $i
+done
+```

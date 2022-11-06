@@ -107,11 +107,11 @@ abbr[data-original-title] {
 /* blockquotes */
 
 blockquote {
-  margin: 2em 1em 2em 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin: 1em 1em 1em 0;
+  padding: 1em;
   font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  border: 0.25em solid mix(#000, $border-color, 10%);
+  background-color: $border-color;
 
   cite {
     font-style: italic;
@@ -123,6 +123,23 @@ blockquote {
   }
 }
 
+.clear_blockquote {
+  margin: 1em 1em 1em 0;
+  padding: 1em;
+  font-style: italic;
+  border-left: 0.25em solid transparent;
+
+  cite {
+    font-style: italic;
+
+    &:before {
+      content: "\2014";
+      padding-right: 5px;
+    }
+  }
+  background-color: transparent;
+
+}
 /* links */
 
 a {
@@ -166,7 +183,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 2px solid mix(#000, $border-color, 10%);
 }
 
 /* lists */

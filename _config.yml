@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Peter Hooper"
   avatar : "/assets/images/me.png"
-  bio    : "A diversemix of knowledge aquired over half a century."
+  bio    : "<i>BSc(Hons), PhD Physics</i> <br><br>Tech Lead & Open source developer."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
