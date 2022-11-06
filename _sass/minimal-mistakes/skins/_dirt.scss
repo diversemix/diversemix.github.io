@@ -36,3 +36,11 @@ $base0f: #b49368 !default;
 $sans-serif : 'Montserrat', sans-serif;
 $global-font-family : $sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+$doc-font-size: 13 !default;
+
+.page__content {
+   font-size: 0.9em;
+ }
+ 

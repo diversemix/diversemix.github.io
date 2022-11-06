@@ -8,10 +8,6 @@ There are three ways to use this site:
 2. To look through all the topics of the posts then you'd be best [to browse the tags](/tags) to see if there are any topics you'd find of interest.
 3. Finally, for a focused reading experience you can read posts by the categories below.
 
-| Test | col |
-| ---- | --- |
-| A  | B |
-
 <hr>
 <table>
   <tr>
