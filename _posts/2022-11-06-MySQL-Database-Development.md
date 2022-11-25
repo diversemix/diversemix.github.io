@@ -10,6 +10,8 @@ tags:
   - personal
 ---
 
+Past collection of some very specific MySQL commands
+
 ## Checking size used:
 ```bash
 ndb_mgm -e "ALL REPORT MEMORY"

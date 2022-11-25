@@ -2,32 +2,10 @@
 
 This site is hosted on [blog.diversemix.com](http://blog.diversemix.com)
 
-## Things still to do
+## TODO / Issues
 
-- Import code from gists
-- Import code from toolbox (+remove repo)
-- Import code from other stuff lying around
-- Post on DDD 
-- 
-- Interest Posts:
-  - Anatomy of God
-  - Astronomy
-  - Archery
-  - Science 
-    - Genetics
-    - Organic Semiconductors
- 
-- People Posts:
-  - communication
-  - documentation
-  - self organisation
-  - teams I have Managed
-  
-- Learning Posts:
-  - Rust
-  - AI
-  - Python 3
-  - 
+[Github issues](https://github.com/diversemix/diversemix.github.io/issues)
+
 ## Running locally
 
 A word of warning, I thought I'd install `rbenv` to be able to control different versions of ruby on my system. However, this will take you down a complete rabbit hole of trying to make ruby compile - this was some incompatibility with openssl. YMMV 
