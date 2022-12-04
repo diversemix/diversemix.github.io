@@ -2,12 +2,11 @@
 title: "MySQL Database Development"
 last_modified_at: 2022-11-06T18:01:51+00:00
 categories:
-  - blank
+  - Technical
 tags:
-  - snippet
-  - opinion
-  - learning
-  - personal
+  - database
+  - mysql
+  - cheatsheet
 ---
 
 Past collection of some very specific MySQL commands
