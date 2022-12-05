@@ -93,4 +93,4 @@ Don't forget to include the "Why" as well as the "what".
 
 ## Next...
 
-You might like to now think about the "how" by setting some (goals)[/goals] to help you achieve your aims.
+You might like to now think about the "how" by setting some [goals](/goals) to help you achieve your aims.
