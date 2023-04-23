@@ -42,12 +42,10 @@ This plan altered again when I paid position to do research after my degree, I r
 But, you guess it, the plan changed again while I was doing research, I became a Dad and there was a huge reduction in positions in Universities in the UK as Polytechnics were being merged and the whole system was being turned into a business (I'm sure you'll hear more from me on this topic)... I needed to find a job...
 
 I guess this is where my blog starts, 
-as a scientist going into a career in software.
-Despite the fact I started out at a time when "computers" and  software careers were just beginning, it was seen as a normal progression.
-Again my interested was sparked as now 
-I'd just finished in a physical laboratory where I'd spent a large amount of time automating measurements using software, and this was a determining factor on how I approached my career. 
-
-as primarily the discoveries and explanations of my experience throughout my career as a software developer/engineer. 
+as a scientist starting a career in software, which was not uncommon at the time.
+Again my interested was sparked as now as I'd just finished in a laboratory where I'd spent a large amount of time automating measurements using software.
+The interest was in how the world was changing with this new found "power" of being able to control and automate the world. 
+So here we begin, I hope you enjoy my posts as I write about my discoveries and explain my learning experiences throughout my career as a software developer/engineer. 
 
 ## Getting the most from this site
 
