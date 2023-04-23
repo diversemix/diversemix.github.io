@@ -46,7 +46,7 @@ body {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
-
+  
   .page__inner-wrap {
     float: left;
     margin-top: 1em;
@@ -116,9 +116,14 @@ body {
     font-size: 1em;
   }
 
+  blockquote p {
+    margin: 0 0 0;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
+    //margin: 0 0 ;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {

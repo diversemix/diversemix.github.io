@@ -94,7 +94,6 @@ fieldset {
   orphans: 3;
   widows: 3;
 }
-
 /* abbreviations */
 
 abbr[title],
@@ -353,4 +352,8 @@ input[type="submit"],
 .archive__item-teaser {
   -webkit-transition: $global-transition;
   transition: $global-transition;
+}
+
+.center {
+  text-align: center;
 }
