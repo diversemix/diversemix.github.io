@@ -36,6 +36,7 @@ h6 {
 h1 {
   margin-top: 0;
   font-size: $h-size-1;
+  font-variant: small-caps;
 }
 
 h2 {
@@ -64,7 +65,14 @@ small,
 }
 
 p {
-  margin-bottom: 1.3em;
+ 
+  img {
+    &.emoji {
+      height: 2em;
+    }
+  } 
+
+ margin-bottom: 1.3em;
 }
 
 u,
@@ -109,9 +117,25 @@ blockquote {
   margin: 1em 1em 1em 0;
   padding: 1em;
   font-style: italic;
-  border: 0.25em solid mix(#000, $border-color, 10%);
+  border-top: 0.05em solid mix(#000, $border-color, 5%);
+  border-left: 0.05em solid mix(#000, $border-color, 5%);
+  border-right: 0.25em solid mix(#000, $border-color, 5%);
+  border-bottom: 0.25em solid mix(#000, $border-color, 5%);
   background-color: $border-color;
 
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-weight: bolder;
+  font-size: smaller;
+
+  img {
+    &.emoji {
+    }
+    margin-bottom: .25em;
+  } 
+
   cite {
     font-style: italic;
 
@@ -122,23 +146,6 @@ blockquote {
   }
 }
 
-.clear_blockquote {
-  margin: 1em 1em 1em 0;
-  padding: 1em;
-  font-style: italic;
-  border-left: 0.25em solid transparent;
-
-  cite {
-    font-style: italic;
-
-    &:before {
-      content: "\2014";
-      padding-right: 5px;
-    }
-  }
-  background-color: transparent;
-
-}
 /* links */
 
 a {
@@ -299,6 +306,7 @@ svg:not(:root) {
  */
 
 nav {
+  font-variant:  small-caps;
   ul {
     margin: 0;
     padding: 0;

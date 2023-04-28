@@ -3,18 +3,14 @@ permalink: /about/
 title: "About"
 ---
 
-<p class="clear_blockquote">
-<b>"Our own depth of character and breadth of skill is reflected in the diversity of the people we encounter and our ability to assimilate their knowledge and experience into our own."</b>
-</p>
+>"Our own depth of character and breadth of skill is reflected in the diversity of the people we encounter and our ability to assimilate their knowledge and experience into our own."
 
-{: .center}
-> :warning: This site is undergoing an overhaul :warning:
-
-[Skip down to how to get the most from this site](#getting-the-most-from-this-site)... :point_down:
+:point_down:[Skip down to how to get the most from this site](#getting-the-most-from-this-site)...
 
 ## Preface
 
-> This section is intended for you to read like a preface to a book, explaining the authors reasoning and approach to writing this blog.
+> <p>:spiral_notepad:</p> 
+This section is intended for you to read like a preface to a book, explaining the authors reasoning and approach to writing this blog.
 
 Perhaps it's easiest to start out explaining what this blog is not.
 There is certainly no intention for me to write things here on a regular basis, as I'll be adding things as and 
@@ -54,48 +50,19 @@ There are three ways to use this site:
 2. To look through all the topics of the posts then you'd be best [to browse the tags](/tags) to see if there are any topics you'd find of interest.
 3. Finally, for a focused reading experience you can read posts by the categories below.
 
-<table>
-  <tr>
-    <th>Technical</th>
-    <td>
-        Most of this site is dedicated to software development and its process to deployment on various infrastructure.
-        How does this look?
-        <p>
-        <a href="/categories/#technical">Browse technical posts...</a>
-        </p>
-    </td>
-  </tr>
-  <tr>
-    <th>People</th>
-    <td>
-        This category contains posts on topics such as working in teams and communication including documentation. 
-        <p>
-        <a href="/categories/#people">Browse posts about people...</a>
-        </p>
-    </td>
-  </tr>
-  <tr>
-    <th>Interest</th>
-    <td>
-        Interest posts are passing  including, woodworking, pottery,  
-        These posts will be opinionated. 
-        <p>
-        <a href="/categories/#interests">Browse posts about other interests...</a>
-        </p>
-    </td>
-  </tr>
-  <tr>
-    <th>Learning</th>
-    <td>
-        Each post in the learning category is a personal record of resources and output from exercises.
-        Hopefully you will find these useful if embarking on a similar topic to learn.  
-        <p>
-        <a href="/categories/#technical">Browse areas of learning...</a>
-        </p>
-    </td>
-  </tr>
-</table>
+> :chains: [Technical](/categories/#technical) <br/>
+Most of this site is dedicated to software development and its process to deployment on various infrastructure.
 
+> :chains: [People](/categories/#people) <br/>
+This category contains posts on topics such as working in teams and communication including documentation. 
+
+> :chains: [Interest](/categories/#interest) <br/>
+Interest posts are passing including, woodworking, pottery, etc. These posts will be opinionated. 
+
+> :chains: [Learning](/categories/#learning) <br/>
+Each post in the learning category is a personal record of resources and output from exercises.  Hopefully you will find these useful if embarking on a similar topic to learn. 
+
+## Other things...
 - Please see [this git repo](https://github.com/diversemix/diversemix.github.io) for information on how this site is built.
  
 - For any other information about me and the my work in the Open Source community, please visit my [github page](https://github.com/diversemix).
