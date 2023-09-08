@@ -1,6 +1,7 @@
 # diversemix.github.io
 
 This site is hosted on [blog.diversemix.com](http://blog.diversemix.com)
+The intention for this site is described here [in the plan](PLAN.md)
 
 ## TODO / Issues
 
@@ -8,6 +9,11 @@ This site is hosted on [blog.diversemix.com](http://blog.diversemix.com)
 
 ## Running locally
 
+### TL;DR
+
+Just run `make`
+
+### More detail
 A word of warning, I thought I'd install `rbenv` to be able to control different versions of ruby on my system. However, this will take you down a complete rabbit hole of trying to make ruby compile - this was some incompatibility with openssl. YMMV 
 
 The following assumes the use of a Debian based linux O/S, such at Ubuntu:
