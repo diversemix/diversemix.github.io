@@ -15,7 +15,9 @@ let frictionCounter = 0;
 
 // Restart game function
 function restartGame() {
-    player = createPlayer(TILE_SIZE, TILE_SIZE);
+    // Reset player position instead of creating new object
+    player.x = TILE_SIZE;
+    player.y = TILE_SIZE;
     gameWon = false;
     dx = 0;
     dy = 0;
