@@ -1,6 +1,7 @@
 import { TILE_SIZE, SCREEN_WIDTH, SCREEN_HEIGHT, FPS, CellType, BACKGROUND_COLOR, createPlayer } from './common.js';
 import { endGame, drawPlayer, drawMaze,showTime } from './logic.js';
 import { MAZE } from './maze.js';
+import { setupTouchClickControls, isAutoMoving, getAutoMoveDirection, stopAutoMovement } from './movement.js';
 
 // Game state
 let canvas;
@@ -22,6 +23,9 @@ function init() {
 
     // Set up keyboard controls
     setupKeyboardControls();
+
+    // Set up touch/click controls
+    setupTouchClickControls(canvas, player, MAZE, () => gameWon);
 
     // Start game loop
     gameLoop();
@@ -54,6 +58,11 @@ function movePlayer(player, dx, dy, maze) {
 function setupKeyboardControls() {
     document.addEventListener('keydown', (event) => {
         if (!gameWon) {
+            // Cancel auto-movement if user presses a key
+            if (isAutoMoving()) {
+                stopAutoMovement();
+            }
+
             switch(event.key.toLowerCase()) {
                 case 'arrowup':
                 case 'w':
@@ -113,7 +122,15 @@ function gameLoop() {
     frictionCounter++;
     if (frictionCounter === friction) {
         frictionCounter = 0;
-        gameWon = movePlayer(player, dx, dy, MAZE);
+
+        // Auto-movement takes precedence over keyboard input
+        if (isAutoMoving()) {
+            const { dx: moveX, dy: moveY } = getAutoMoveDirection();
+            gameWon = movePlayer(player, moveX, moveY, MAZE);
+        } else {
+            // Normal keyboard movement
+            gameWon = movePlayer(player, dx, dy, MAZE);
+        }
     }
 
     if (gameWon) {
