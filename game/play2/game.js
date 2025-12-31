@@ -13,6 +13,14 @@ let dy = 0;
 let friction = 3;
 let frictionCounter = 0;
 
+// Restart game function
+function restartGame() {
+    player = createPlayer(TILE_SIZE, TILE_SIZE);
+    gameWon = false;
+    dx = 0;
+    dy = 0;
+}
+
 // Initialize game
 function init() {
     canvas = document.getElementById('gameCanvas');
@@ -25,7 +33,7 @@ function init() {
     setupKeyboardControls();
 
     // Set up touch/click controls
-    setupTouchClickControls(canvas, player, MAZE, () => gameWon);
+    setupTouchClickControls(canvas, player, MAZE, () => gameWon, restartGame);
 
     // Start game loop
     gameLoop();
@@ -85,10 +93,7 @@ function setupKeyboardControls() {
 
         // Reset game
         if (event.key.toLowerCase() === 'r') {
-            player = createPlayer(TILE_SIZE, TILE_SIZE);
-            gameWon = false;
-            dx = 0;
-            dy = 0;
+            restartGame();
         }
     });
 

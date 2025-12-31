@@ -10,6 +10,11 @@ let canvas = null;
 let player = null;
 let maze = null;
 let gameWonGetter = null;
+let restartCallback = null;
+
+// Double-tap detection
+let lastTapTime = 0;
+const DOUBLE_TAP_THRESHOLD = 300; // milliseconds
 
 // Path validation - check if there's a clear straight line between start and end
 function hasCleanPath(startX, startY, endX, endY, mazeGrid) {
@@ -83,6 +88,20 @@ function processClickOrTouch(canvasX, canvasY) {
 
 // Handle canvas click events (desktop)
 function handleCanvasClick(event) {
+    const currentTime = Date.now();
+    const timeSinceLastTap = currentTime - lastTapTime;
+
+    // Check for double-tap
+    if (timeSinceLastTap < DOUBLE_TAP_THRESHOLD) {
+        if (restartCallback) {
+            restartCallback();
+        }
+        lastTapTime = 0; // Reset to prevent triple-tap from triggering another restart
+        return;
+    }
+
+    lastTapTime = currentTime;
+
     const rect = canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
@@ -92,6 +111,21 @@ function handleCanvasClick(event) {
 // Handle canvas touch events (mobile/tablet)
 function handleCanvasTouch(event) {
     event.preventDefault(); // Prevent scrolling
+
+    const currentTime = Date.now();
+    const timeSinceLastTap = currentTime - lastTapTime;
+
+    // Check for double-tap
+    if (timeSinceLastTap < DOUBLE_TAP_THRESHOLD) {
+        if (restartCallback) {
+            restartCallback();
+        }
+        lastTapTime = 0; // Reset to prevent triple-tap from triggering another restart
+        return;
+    }
+
+    lastTapTime = currentTime;
+
     const touch = event.touches[0];
     const rect = canvas.getBoundingClientRect();
     const x = touch.clientX - rect.left;
@@ -100,11 +134,12 @@ function handleCanvasTouch(event) {
 }
 
 // Setup touch and click controls
-export function setupTouchClickControls(canvasElement, playerObject, mazeGrid, isGameWon) {
+export function setupTouchClickControls(canvasElement, playerObject, mazeGrid, isGameWon, onRestart) {
     canvas = canvasElement;
     player = playerObject;
     maze = mazeGrid;
     gameWonGetter = isGameWon;
+    restartCallback = onRestart;
 
     // Add event listeners
     canvas.addEventListener('click', handleCanvasClick);

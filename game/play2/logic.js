@@ -21,7 +21,7 @@ export function endGame(ctx) {
     ctx.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
     middleText(ctx, 'You Win!', '74px Arial', 0, WIN_TEXT_COLOR);
-    middleText(ctx, 'Press R to restart', '36px Arial', 60, WIN_INSTRUCTION_COLOR);
+    middleText(ctx, 'Press R or Double-Tap to restart', '36px Arial', 60, WIN_INSTRUCTION_COLOR);
 }
 
 export function showTime(ctx) {
